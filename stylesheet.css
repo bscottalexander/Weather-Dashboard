@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#header {
+  grid-area: a;
+  margin-bottom: 10px;
+}
+
+#search-panel {
+  grid-area: b;
+}
+
+#main-content {
+  grid-area: c;
+}
+
+
+#layout {
+  display: none;
+  grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+@media screen and (min-width: 960px) {
+  #layout {
+    grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "b c c c";
+  }
+}
+
+#five-day-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+}
+
+@media screen and (min-width: 960px) {
+  #five-day-grid {
+    grid-template-areas: "a b c d e";
+  }
+}
+
+#day-1-container {
+    grid-area: a;
+}
+
+#day-2-container {
+    grid-area: b;
+}
+
+#day-3-container {
+    grid-area: c;
+}
+
+#day-4-container {
+    grid-area: d;
+}
+
+#day-5-container {
+    grid-area: e;
+}
+
+#loading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#today-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.btn-outline-success {
+  width: 98%;
+  margin-top: 10px
+}
+
+.search-title {
+  margin: 10px
+}
+
+.future-forecast {
+  font-weight: bold;
+}
+
+#history-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
