@@ -52,7 +52,7 @@ function setLoading(value) {
 }
 
 async function fetchLatitudeLong(cityName, apiKey) {
-  const baseURL = "http://api.openweathermap.org/geo/1.0/direct";
+  const baseURL = "https://api.openweathermap.org/geo/1.0/direct";
   const params = {
     q: cityName,
     appid: apiKey,
@@ -78,7 +78,7 @@ async function fetchLatitudeLong(cityName, apiKey) {
 }
 
 async function fetchWeatherData(latitude, longitude, apiKey) {
-  const baseURL = "http://api.openweathermap.org/data/2.5/onecall";
+  const baseURL = "https://api.openweathermap.org/data/2.5/onecall";
   const params = {
     lat: latitude,
     lon: longitude,
